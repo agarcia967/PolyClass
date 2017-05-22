@@ -1,2 +1,7 @@
 /bin/
-*.bat
+
+../JavaDocs/
+.bat
+.cmd
+~*.*
+*.url
