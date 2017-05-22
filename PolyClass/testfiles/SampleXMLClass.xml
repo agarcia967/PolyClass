@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+	<identifier>Dog</identifier>
+	<abstract>true</abstract>
+	<static>true</static>
+	<visibility>public</visibility>
+	<attribute>
+		<identifier>name</identifier>
+		<dataType>STRING</dataType>
+	</attribute>
+	<attribute>
+		<identifier>age</identifier>
+		<dataType>INTEGER</dataType>
+		<visibility>protected</visibility>
+	</attribute>
+	<attribute>
+		<identifier>home</identifier>
+		<dataType>CLASS</dataType>
+		<className>Address</className>
+	</attribute>
+	
+	<operation>
+		<identifier>look</identifier>
+	</operation>
+	<operation>
+		<identifier>bark</identifier>
+		<visibility>private</visibility>
+		<return>
+			<dataType>INTEGER</dataType>
+		</return>
+	</operation>
+	<operation>
+		<identifier>eat</identifier>
+		<visibility>protected</visibility>
+		<argument>
+			<identifier>foodItem</identifier>
+			<dataType>CLASS</dataType>
+			<className>Food</className>
+		</argument>
+		<return>
+			<dataType>CLASS</dataType>
+			<className>Bowl</className>
+		</return>
+	</operation>
+</class>
+
+

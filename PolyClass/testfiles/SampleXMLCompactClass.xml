@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE class [
+<!ELEMENT class (abstract,attribute*,operation*)>
+<!ELEMENT attribute EMPTY>
+<!ATTLIST attribute
+  abstract CDATA #REQUIRED
+  className CDATA #REQUIRED
+  dataType CDATA #REQUIRED
+  identifier CDATA #REQUIRED
+  static CDATA #REQUIRED
+  visibility CDATA #REQUIRED>
+<!ATTLIST operation
+  abstract CDATA #REQUIRED
+  identifier CDATA #REQUIRED
+  static CDATA #REQUIRED
+  visibility CDATA #REQUIRED>
+]>
+
+<class visibility="public" identifier="Dog" abstract="true" static="true">
+	<attribute identifier="name" dataType="STRING" />
+	<attribute identifier="age" dataType="INTEGER" visibility="protected" />
+	<attribute identifier="home" dataType="CLASS" className="Address"/>
+	
+	<operation identifier="look" />
+	<operation identifier="bark" visibility="private">
+		<return dataType="INTEGER"/>
+	</operation>
+	<operation identifier="eat" visibility="protected">
+		<argument identifier="foodItem" dataType="CLASS" className="Food"/>
+		<return dataType="CLASS" className="Bowl"/>
+	</operation>
+</class>
+
+

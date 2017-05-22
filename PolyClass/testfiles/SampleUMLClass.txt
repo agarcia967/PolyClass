@@ -1,0 +1,13 @@
++-----------------------+
+| Dog					|
+| <Abstract>			|
++-----------------------+
+| na12me : String       |
+| # age : int           |
+| _home : Address       |
++-----------------------+
+| + toString() : String |
+| look() : void         |
+| - bark() : int        |
+| - eat() : String      |
++-----------------------+
